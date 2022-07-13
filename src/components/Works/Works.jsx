@@ -1,13 +1,13 @@
 import React, { useContext } from "react";
 import "./Works.css";
-import Upwork from "../../img/Upwork.png";
+import Goignis from "../../img/Goignis1.png";
 import Fiverr from "../../img/fiverr.png";
-import Amazon from "../../img/amazon.png";
+import Hackerhsla from "../../img/Hackershala.png";
 import Shopify from "../../img/Shopify.png";
 import Facebook from "../../img/Facebook.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
-import {Link} from 'react-scroll'
+import { Link } from "react-scroll";
 const Works = () => {
   // context
   const theme = useContext(themeContext);
@@ -25,14 +25,11 @@ const Works = () => {
           </span>
           <span>Brands & Clients</span>
           <spane>
-            Lorem ispum is simpley dummy text of printing of printing Lorem
-            <br />
-            ispum is simpley dummy text of printingLorem ispum is simpley dummy
-            text
-            <br />
-            y dummy text of printingLorem
-            <br />
-            ispum is simpley dummy text of printing
+            Goigins- Full-Stack Web Developer- Created the whole website from scratch 
+            <br /><br />
+           Hackershala- Full-Stack Web Developer- Created the React admin panel.
+            <br /><br />
+           Shopify Freelance work
           </spane>
           <Link to="contact" smooth={true} spy={true}>
             <button className="button s-button">Hire Me</button>
@@ -47,27 +44,23 @@ const Works = () => {
       </div>
       <div className="w-right">
         <motion.div
-          initial={{ rotate: 45 }}
+          initial={{ rotate: 360 }}
           whileInView={{ rotate: 0 }}
           viewport={{ margin: "-40px" }}
-          transition={{ duration: 3.5, type: "spring" }}
+          transition={{ duration: 10, type: "spring" }}
           className="w-mainCircle"
         >
+          <div></div>
           <div className="w-secCircle">
-            <img src={Upwork} alt="" />
+            <img src={Goignis} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Fiverr} alt="" />
-          </div>
-          <div className="w-secCircle">
-            <img src={Amazon} alt="" />
+            <img src={Hackerhsla} alt="" />
           </div>{" "}
           <div className="w-secCircle">
             <img src={Shopify} alt="" />
           </div>
-          <div className="w-secCircle">
-            <img src={Facebook} alt="" />
-          </div>
+          <div></div>
         </motion.div>
         {/* background Circles */}
         <div className="w-backCircle blueCircle"></div>

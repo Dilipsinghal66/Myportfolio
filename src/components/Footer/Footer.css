@@ -21,6 +21,20 @@
   gap: 2rem;
 }
 
+.i-icons1 {
+  margin-top: -2rem;
+  display: flex;
+  gap: 1rem;
+  background-color: white;
+
+}
+.i-icons1 > * {
+  transform: scale(0.7);
+}
+.i-icons1 > *:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 480px){
   .f-content{
     transform: scale(.5);

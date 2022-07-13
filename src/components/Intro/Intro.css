@@ -32,15 +32,18 @@
   font-size: 14px;
   color: var(--gray);
   margin-top: 10px;
+  font-size: 1rem;
 }
 .i-button {
   width: 6rem;
   height: 2rem;
 }
 .i-icons {
-  margin-top: 3rem;
+  margin-top: 0rem;
+  margin-left: -2rem;
   display: flex;
   gap: 0rem;
+
 }
 .i-icons > * {
   transform: scale(0.5);
@@ -69,7 +72,11 @@
 }
 .i-right > :nth-child(3) {
   transform: scale(1.4);
-  left: 28%;
+  top: -3rem;
+  left: 15%;
+  width: auto;
+  height: 400px;
+  border-radius: 100px;
 }
 .i-right > :nth-child(4) {
   transform: scale(0.62);
@@ -100,9 +107,30 @@
     height: 64rem;
   }
 
+  .i-name > :nth-child(2) {
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .i-icons {
+    margin-top: 0rem;
+    margin-left: -1rem;
+    display: flex;
+    gap: 0rem;
+  
+  }
+
   .i-right {
     transform: scale(0.8);
     left: -3rem;
+  }
+  .i-right > :nth-child(3) {
+    transform: scale(1.4);
+    top: -3rem;
+    left: 25%;
+    width: auto;
+    height: 400px;
+    border-radius: 100px;
   }
   .i-right .blur {
     display: none;

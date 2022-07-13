@@ -42,6 +42,11 @@ textarea{
     left: 8rem;
 }
 
+.w-left .awesome .message{
+    color:  "Blue" ;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif  ;
+    }
+
 @media screen and (max-width: 480px) {
     .contact-form{
         padding: 0;

@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import "./Intro.css";
 import Vector1 from "../../img/Vector1.png";
 import Vector2 from "../../img/Vector2.png";
-import boy from "../../img/boy.png";
+import boy from "../../img/biy1.png";
 import glassesimoji from "../../img/glassesimoji.png";
 import thumbup from "../../img/thumbup.png";
 import crown from "../../img/crown.png";
@@ -10,6 +10,7 @@ import FloatinDiv from "../FloatingDiv/FloatingDiv";
 import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
 import Instagram from "../../img/instagram.png";
+import hand from "../../img/handimg.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
@@ -28,10 +29,12 @@ const Intro = () => {
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
-          <span>Andrew Thomas</span>
+          <span class="wave-emoji">Dilip Singhal👋 </span>
           <span>
-            Frontend Developer with high level of experience in web designing
-            and development, producting the Quality work
+            A passionate Full Stack Software Developer🚀 having an experience
+            <br /> of building Web with JavaScript / Reactjs /
+            <br /> Nodejs / React Native and some other cool libraries and
+            frameworks
           </span>
         </div>
         <Link to="contact" smooth={true} spy={true}>
@@ -39,9 +42,18 @@ const Intro = () => {
         </Link>
         {/* social icons */}
         <div className="i-icons">
-          <img src={Github} alt="" />
-          <img src={LinkedIn} alt="" />
-          <img src={Instagram} alt="" />
+          <a href="https://github.com/Dilipsinghal66" target="_blank">
+            <img src={Github} alt="" />
+          </a>
+
+          <a href="https://www.linkedin.com/in/dilip-singhal/" target="_blank">
+            <img src={LinkedIn} alt="" />
+          </a>
+
+          <a href="https://github.com/Dilipsinghal66" target="_blank">
+            {" "}
+            <img src={Instagram} alt="" />{" "}
+          </a>
         </div>
       </div>
       {/* right image side */}
@@ -75,7 +87,7 @@ const Intro = () => {
           className="floating-div"
         >
           {/* floatinDiv mein change hy dark mode ka */}
-          <FloatinDiv img={thumbup} text1="Best Design" text2="Award" />
+          <FloatinDiv img={thumbup} text1="Best In" text2="Coding" />
         </motion.div>
 
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>

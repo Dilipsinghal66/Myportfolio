@@ -6,16 +6,16 @@ const Contact = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   const form = useRef();
-  const [done, setDone] = useState(false)
+  const [done, setDone] = useState(false);
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "service_2mu5xtl",
-        "template_m5udu2c",
+        "service_nqwm22u",
+        "template_gyv6vau",
         form.current,
-        "VLwg1ltOWvnCYAiK_"
+        "user_aiQjEY4NvJFyFk97Ubwg5"
       )
       .then(
         (result) => {
@@ -35,8 +35,9 @@ const Contact = () => {
       <div className="w-left">
         <div className="awesome">
           {/* darkMode */}
-          <span style={{color: darkMode?'white': ''}}>Get in Touch</span>
+          <span style={{ color: darkMode ? "white" : "" }}>Get in Touch</span>
           <span>Contact me</span>
+          <span  className="message">DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.</span>
           <div
             className="blur s-blur1"
             style={{ background: "#ABF1FF94" }}
@@ -46,10 +47,20 @@ const Contact = () => {
       {/* right side form */}
       <div className="c-right">
         <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name="user_name" className="user"  placeholder="Name"/>
-          <input type="email" name="user_email" className="user" placeholder="Email"/>
-          <textarea name="message" className="user" placeholder="Message"/>
-          <input type="submit" value="Send" className="button"/>
+          <input
+            type="text"
+            name="user_name"
+            className="user"
+            placeholder="Name"
+          />
+          <input
+            type="email"
+            name="user_email"
+            className="user"
+            placeholder="Email"
+          />
+          <textarea name="message" className="user" placeholder="Message" />
+          <input type="submit" value="Send" className="button" />
           <span>{done && "Thanks for Contacting me"}</span>
           <div
             className="blur c-blur1"
