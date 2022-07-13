@@ -6,7 +6,6 @@ import Glasses from "../../img/glasses.png";
 import Humble from "../../img/humble.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
-import Resume from "./Resume.pdf";
 
 const Services = () => {
   // context
@@ -31,7 +30,8 @@ const Services = () => {
           
           achieve results no matter the cost
         </spane>
-        <a href={Resume} download>
+        <a  href="https://drive.google.com/file/d/1InQPBvNeJHvOTVmtfopPUCdmB0NOLZ3X/view?usp=sharing"
+          target="_blank" download>
           <button className="button s-button">Download CV</button>
         </a>
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
