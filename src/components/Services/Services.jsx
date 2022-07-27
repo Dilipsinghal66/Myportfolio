@@ -30,7 +30,7 @@ const Services = () => {
           
           achieve results no matter the cost
         </spane>
-        <a  href="https://drive.google.com/file/d/1InQPBvNeJHvOTVmtfopPUCdmB0NOLZ3X/view?usp=sharing"
+        <a  href="https://drive.google.com/file/d/1tjOqktIB8xI2LD4AgEq9lkl2IOdLknDa/view?usp=sharing"
           target="_blank" download>
           <button className="button s-button">Download CV</button>
         </a>
